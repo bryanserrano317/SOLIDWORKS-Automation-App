@@ -24,10 +24,7 @@ namespace automationapp
         {
             swApp = GetSolidworksAPI.GetApplication();
 
-            /*
             defaultPartTemplate = swApp.GetUserPreferenceStringValue((int)swUserPreferenceStringValue_e.swDefaultTemplatePart);
-
-            swApp.NewDocument(defaultPartTemplate, 0, 0, 0);
 
             swModel = (ModelDoc2)swApp.ActiveDoc;
 
@@ -38,48 +35,17 @@ namespace automationapp
 
             swModel.InsertSketch2(true);
 
-            status = swModel.SketchManager.SketchUseEdge3(false, false);
+            swModel.CreateLine2(0, 0, 0, 0.001, 0, 0);
 
-            swModel.ClearSelection2(true);
+            swModel.CreateLine2(0.001, 0, 0, 0.001, 0.001, 0);
 
-            swModel.FeatureManager.FeatureExtrusion3(true, false, false, 0, 0, 0.01, 0.01, false, false, false, false, 1.74 * Math.Pow(10, -2), Math.Pow(10, -2), false, false, false, false, false, true, true, 0, 0, false);
+            swModel.CreateLine2(0.001, 0.001, 0, 0, 0.001, 0);
 
-            swModel.SelectionManager.EnableContourSelection = false;
-            */
-
-
-            swApp = GetSolidworksAPI.GetApplication();
-
-            defaultPartTemplate = swApp.GetUserPreferenceStringValue((int)swUserPreferenceStringValue_e.swDefaultTemplatePart);
-
-            //swApp.NewDocument(defaultPartTemplate, 0, 0, 0);
-
-            swModel = (ModelDoc2)swApp.ActiveDoc;
-
-            swFeature = swModel.FeatureByPositionReverse(2);
-            swFeature.Name = "RefPlane";
-
-            status = swModel.Extension.SelectByID2("RefPlane", "Plane", 0, 0, 0, false, 0, null, 0);
-
-            swModel.InsertSketch2(true);
-
-            //swModel.CreateCircleByRadius2(1 / 2, 1 / 2, 0, 1 / 2);
-
-            swModel.CreateLine2(0, 0, 0, 1, 0, 0);
-
-            swModel.CreateLine2(1, 0, 0, 1, 1, 0);
-
-            swModel.CreateLine2(1, 1, 0, 0, 1, 0);
-
-            swModel.CreateLine2(0, 0, 0, 0, 1, 0);
-
-            //status = swModel.SketchManager.SketchUseEdge3(false, false);
+            swModel.CreateLine2(0, 0, 0, 0, 0.001, 0);
 
             swModel.ClearSelection2(true);
 
             swFeature = ((Feature)(swModel.FeatureManager.FeatureExtrusion2(true, false, false, 0, 0, 0.001, 0.001, false, false, false, false, 1, 1, false, false, false, false, false, true, true, 0, 0, false)));
-
-            //swModel.ViewZoomtofit2();
 
 
         }

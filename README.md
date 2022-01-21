@@ -1,8 +1,10 @@
 # SOLIDWORKS-Automation
 Automation Scripts built using SOLIDWORKS API with C#
 
-lego.cs
-![Screenshot 2022-01-12 144813](https://user-images.githubusercontent.com/75232089/149212252-da43a6eb-dec0-4dea-a7a6-d8e94dcf9dcf.png)
+Start Page
+![main_page](https://user-images.githubusercontent.com/75232089/150558060-26f6b6c0-beb2-4d5f-8a80-d57ea5b84dae.png)
 
-minecraft.cs
-![image (1)](https://user-images.githubusercontent.com/75232089/149212468-c99f5243-b311-45c5-b1b0-2326099c1b4f.png)
+
+
+Washer Automation Script Page (WasherModel.cs / WasherForm.cs)
+![washer](https://user-images.githubusercontent.com/75232089/150558794-d859b08a-ee43-4396-9066-3252036b5253.png)

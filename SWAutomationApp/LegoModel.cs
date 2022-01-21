@@ -33,17 +33,6 @@ namespace automationapp
         string strName;
         public void CreatePart()
         {
-            string guid = Guid.NewGuid().ToString();
-            string root = @"C:\\" + guid;
-            if (Directory.Exists(root))
-            {
-                Directory.CreateDirectory(root);
-            }
-            else
-            {
-                MessageBox.Show("a file with the same name exists :-)");
-            }
-
 
 
             swApp = GetSolidworksAPI.GetApplication();
@@ -60,8 +49,6 @@ namespace automationapp
             status = swModel.Extension.SelectByID2("RefPlane", "Plane", 0, 0, 0, false, 0, null, 0);
 
             swModel.InsertSketch2(true);
-
-            //swModel.CreateCircleByRadius2(Dim_A / 2, Dim_A / 2, 0, Dim_D1 / 2);
 
             swModel.CreateLine2(0, 0, 0, Dim_A, 0, 0);
 
@@ -102,7 +89,8 @@ namespace automationapp
             swModel.ViewZoomtofit2();
 
             swModel.ForceRebuild3(true);
-
+            
+            /* Coming Soon (Automated Appeareance Setter)
             //strName = @"C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\data\graphics\Materials\metal\aluminum\blue anodized aluminum.p2m";
 
             swAppearance = swModelDocExt.CreateRenderMaterial("C:\\Program Files\\SOLIDWORKS Corp\\SOLIDWORKS\\data\\graphics\\Materials\\metal\\aluminum\\blue anodized aluminum.p2m");
@@ -115,9 +103,7 @@ namespace automationapp
 
             swModel.SaveAs3(root.ToString() + "\\" + Partname + ".sldprt", (int)swSaveAsVersion_e.swSaveAsCurrentVersion, (int)swSaveAsOptions_e.swSaveAsOptions_CopyAndOpen);
 
-
-
-        }
-
-    }
-}
+            */
+        } // end CreatePart
+    } // end class LegoModel
+} // end namespace

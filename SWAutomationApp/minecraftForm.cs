@@ -28,5 +28,12 @@ namespace automationapp
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            minecraftModelHelper start = new minecraftModelHelper();
+
+            start.CreatePart();
+        }
     }
 }

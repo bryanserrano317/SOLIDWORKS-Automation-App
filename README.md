@@ -1,5 +1,6 @@
 # SOLIDWORKS-Automation
-Automation Scripts built using SOLIDWORKS API with C#
+SOLIDWORKS WPF App built with C#, Visual Studio, and the SOLIDWORKS API.
+App intends to educate Mechanical Engineering Students and hobbyists on how to integrate modern programming in SOLIDWORKS to accelerate part design and have more fun with the software :)
 
 Start Page
 ![main_page](https://user-images.githubusercontent.com/75232089/150558060-26f6b6c0-beb2-4d5f-8a80-d57ea5b84dae.png)

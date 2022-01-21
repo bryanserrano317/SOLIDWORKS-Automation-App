@@ -29,8 +29,6 @@ namespace automationapp
 
             defaultPartTemplate = swApp.GetUserPreferenceStringValue((int)swUserPreferenceStringValue_e.swDefaultTemplatePart);
 
-            //swApp.NewDocument(defaultPartTemplate, 0, 0, 0);
-
             swModel = (ModelDoc2)swApp.ActiveDoc;
 
             swFeature = swModel.FeatureByPositionReverse(2);
@@ -54,10 +52,6 @@ namespace automationapp
             swModel.ViewZoomtofit2();
 
             swModel.ForceRebuild3(true);
-
-
-            //swModel.SaveAs3(root.ToString() + "\\" + Partname + ".sldprt", (int)swSaveAsVersion_e.swSaveAsCurrentVersion, (int)swSaveAsOptions_e.swSaveAsOptions_CopyAndOpen);
-
 
         }
 

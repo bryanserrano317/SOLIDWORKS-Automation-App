@@ -1,0 +1,15 @@
+C:\Users\BSO8\Desktop\automationapp\automationapp\bin\Debug\automationapp.exe.config
+C:\Users\BSO8\Desktop\automationapp\automationapp\bin\Debug\automationapp.exe
+C:\Users\BSO8\Desktop\automationapp\automationapp\bin\Debug\automationapp.pdb
+C:\Users\BSO8\Desktop\automationapp\automationapp\obj\Debug\automationapp.csprojResolveAssemblyReference.cache
+C:\Users\BSO8\Desktop\automationapp\automationapp\obj\Debug\automationapp.mainForm.resources
+C:\Users\BSO8\Desktop\automationapp\automationapp\obj\Debug\automationapp.Properties.Resources.resources
+C:\Users\BSO8\Desktop\automationapp\automationapp\obj\Debug\automationapp.washerForm.resources
+C:\Users\BSO8\Desktop\automationapp\automationapp\obj\Debug\automationapp.csproj.GenerateResource.Cache
+C:\Users\BSO8\Desktop\automationapp\automationapp\obj\Debug\automationapp.exe
+C:\Users\BSO8\Desktop\automationapp\automationapp\obj\Debug\automationapp.pdb
+C:\Users\BSO8\Desktop\automationapp\automationapp\obj\Debug\automationapp.LegoForm.resources
+C:\Users\BSO8\Desktop\automationapp\automationapp\obj\Debug\automationapp.minecraftForm.resources
+C:\Users\BSO8\Desktop\automationapp\automationapp\obj\Debug\automationapp.Form1.resources
+C:\Users\BSO8\Desktop\automationapp\automationapp\obj\Debug\automationapp.moreoptions.resources
+C:\Users\BSO8\Desktop\automationapp\automationapp\obj\Debug\automationapp.boltForm.resources

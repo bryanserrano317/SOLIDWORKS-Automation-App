@@ -39,8 +39,6 @@ namespace automationapp
                 LegoModel pm = new LegoModel();
                 pm.Dim_A = Convert.ToDouble(Atxt.Text) / 1000;
                 pm.Dim_B = Convert.ToDouble(Btxt.Text) / 1000;
-                pm.Dim_D1 = Convert.ToDouble(D1txt.Text) / 1000;
-                pm.Dim_D2 = Convert.ToDouble(D2txt.Text) / 1000;
                 pm.Dim_D3 = Convert.ToDouble(D3txt.Text) / 1000;
                 pm.Dim_H1 = Convert.ToDouble(H1txt.Text) / 1000;
                 pm.Dim_H2 = Convert.ToDouble(H2txt.Text) / 1000;
@@ -54,6 +52,16 @@ namespace automationapp
                 MessageBox.Show(ex.ToString(), "ERROR");
 
             }
+        }
+
+        private void D2txt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void D1txt_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

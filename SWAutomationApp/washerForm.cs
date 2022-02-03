@@ -24,12 +24,19 @@ namespace automationapp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            WasherModel wm = new WasherModel();
+            // Start Washer Build Process
+            WasherModel wm = new WasherModel(); // Start Washer Script
+
+            // Pass the dimensions from text boxes to the script
+            // FYI Double means decimal in programming (0.0 = double, 0 = int (integer))
+            // Divide by 1000 because the standard API unit is M (meters) (Convert to mm)
+            // Method Syntax: Convert.ToDouble("user input")
             wm.outsideD = Convert.ToDouble(outsidetxt.Text) / 1000;
             wm.insideD = Convert.ToDouble(insidetxt.Text) / 1000;
             wm.thickness = Convert.ToDouble(thicknesstxt.Text) / 1000;
 
-            wm.CreatePart();
+            // Calls the CreatePart method from WasherModel.cs
+            wm.CreatePart(); 
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

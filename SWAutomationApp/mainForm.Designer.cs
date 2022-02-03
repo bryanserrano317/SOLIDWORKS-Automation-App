@@ -46,7 +46,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("3ds", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(247, 300);
+            this.button1.Location = new System.Drawing.Point(132, 206);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(183, 43);
             this.button1.TabIndex = 0;
@@ -57,18 +57,18 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("3ds", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(436, 300);
+            this.button2.Location = new System.Drawing.Point(321, 206);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(183, 43);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Screw";
+            this.button2.Text = "NAS Fastener";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("3ds", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(625, 300);
+            this.button3.Location = new System.Drawing.Point(510, 206);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(183, 43);
             this.button3.TabIndex = 2;
@@ -79,7 +79,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("3ds", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(814, 300);
+            this.button4.Location = new System.Drawing.Point(699, 206);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(183, 43);
             this.button4.TabIndex = 3;
@@ -91,7 +91,7 @@
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("3ds", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(324, 354);
+            this.textBox2.Location = new System.Drawing.Point(209, 260);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(620, 23);
             this.textBox2.TabIndex = 6;
@@ -103,10 +103,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::automationapp.Properties.Resources.SWSLPlogo1;
-            this.pictureBox1.Location = new System.Drawing.Point(-9, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(-333, -168);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1182, 335);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.Size = new System.Drawing.Size(1636, 535);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -115,7 +115,7 @@
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("3ds", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(137, 377);
+            this.textBox1.Location = new System.Drawing.Point(22, 283);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(982, 23);
             this.textBox1.TabIndex = 7;
@@ -128,18 +128,19 @@
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("3ds", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(377, 245);
+            this.textBox3.Location = new System.Drawing.Point(262, 151);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(489, 23);
             this.textBox3.TabIndex = 8;
             this.textBox3.Text = "What would you like to create today?";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // Time
             // 
             this.Time.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Time.Font = new System.Drawing.Font("3ds", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Time.Location = new System.Drawing.Point(668, 271);
+            this.Time.Location = new System.Drawing.Point(553, 177);
             this.Time.Name = "Time";
             this.Time.Size = new System.Drawing.Size(158, 23);
             this.Time.TabIndex = 9;
@@ -156,7 +157,7 @@
             // 
             this.Date.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Date.Font = new System.Drawing.Font("3ds", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Date.Location = new System.Drawing.Point(377, 271);
+            this.Date.Location = new System.Drawing.Point(262, 177);
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(299, 23);
             this.Date.TabIndex = 10;
@@ -169,7 +170,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1213, 412);
+            this.ClientSize = new System.Drawing.Size(1015, 313);
             this.Controls.Add(this.Time);
             this.Controls.Add(this.Date);
             this.Controls.Add(this.textBox3);

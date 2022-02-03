@@ -32,8 +32,7 @@
             this.outsidetxt = new System.Windows.Forms.TextBox();
             this.insidetxt = new System.Windows.Forms.TextBox();
             this.thicknesstxt = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.build_button = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -41,6 +40,7 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.staticIntroText = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,26 +66,17 @@
             this.thicknesstxt.Size = new System.Drawing.Size(100, 22);
             this.thicknesstxt.TabIndex = 2;
             // 
-            // button1
+            // build_button
             // 
-            this.button1.Font = new System.Drawing.Font("3ds", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 244);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 53);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Start Build!";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::automationapp.Properties.Resources.everbilt_flat_washers_800022_64_1000;
-            this.pictureBox1.Location = new System.Drawing.Point(200, 40);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(264, 193);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.build_button.BackColor = System.Drawing.Color.White;
+            this.build_button.Font = new System.Drawing.Font("3ds", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.build_button.Location = new System.Drawing.Point(12, 244);
+            this.build_button.Name = "build_button";
+            this.build_button.Size = new System.Drawing.Size(182, 53);
+            this.build_button.TabIndex = 3;
+            this.build_button.Text = "Start Build!";
+            this.build_button.UseVisualStyleBackColor = false;
+            this.build_button.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -170,7 +161,17 @@
             this.staticIntroText.ReadOnly = true;
             this.staticIntroText.Size = new System.Drawing.Size(329, 23);
             this.staticIntroText.TabIndex = 11;
-            this.staticIntroText.Text = "SOLIDWORKS SLP - Washer Automation";
+            this.staticIntroText.Text = "Washer Design";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::automationapp.Properties.Resources.Screenshot_2022_02_03_120626;
+            this.pictureBox1.Location = new System.Drawing.Point(213, 41);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(264, 193);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // washerForm
             // 
@@ -186,12 +187,12 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.build_button);
             this.Controls.Add(this.thicknesstxt);
             this.Controls.Add(this.insidetxt);
             this.Controls.Add(this.outsidetxt);
             this.Name = "washerForm";
-            this.Text = "Washer";
+            this.Text = "SOLIDWORKS Automation - Washer";
             this.Load += new System.EventHandler(this.washerForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -205,7 +206,7 @@
         private System.Windows.Forms.TextBox outsidetxt;
         private System.Windows.Forms.TextBox insidetxt;
         private System.Windows.Forms.TextBox thicknesstxt;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button build_button;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;

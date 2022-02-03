@@ -12,12 +12,8 @@ namespace automationapp
 {
     public class LegoModel
     {
-        public string Partname { get; set; }
-
         public double Dim_A { get; set; }
         public double Dim_B { get; set; }
-        public double Dim_D1 { get; set; }
-        public double Dim_D2 { get; set; }
         public double Dim_D3 { get; set; }
         public double Dim_H1 { get; set; }
         public double Dim_H2 { get; set; }
@@ -31,10 +27,9 @@ namespace automationapp
         bool status;
         string defaultPartTemplate;
         string strName;
+
         public void CreatePart()
         {
-
-
             swApp = GetSolidworksAPI.GetApplication();
 
             defaultPartTemplate = swApp.GetUserPreferenceStringValue((int)swUserPreferenceStringValue_e.swDefaultTemplatePart);
@@ -61,6 +56,7 @@ namespace automationapp
             swModel.InsertSketch2(true);
 
             swFeature = swModel.FeatureByPositionReverse(0);
+
             swFeature.Name = "Sketch1";
 
             status = swModel.Extension.SelectByID2("Sketch1", "SKETCH", 0, 0, 0, false, 0, null, 0);
@@ -72,8 +68,11 @@ namespace automationapp
             swModel.InsertSketch2(true);
 
             swModel.CreateCircleByRadius2(Dim_B, Dim_B, 0, Dim_D3 / 2);
+
             swModel.CreateCircleByRadius2(Dim_A - Dim_B, Dim_B, 0, Dim_D3 / 2);
+
             swModel.CreateCircleByRadius2(Dim_A - Dim_B, Dim_A - Dim_B, 0, Dim_D3 / 2);
+
             swModel.CreateCircleByRadius2(Dim_B, Dim_A - Dim_B, 0, Dim_D3 / 2);
 
             swModel.InsertSketch2(true);
@@ -85,15 +84,16 @@ namespace automationapp
             status = swModel.Extension.SelectByID2("Sketch2", "SKETCH", 0, 0, 0, false, 0, null, 0);
 
             swModel.FeatureManager.FeatureExtrusion3(true, false, false, 0, 0, Dim_H2, 0, false, false, false, false, 0, 0, false, false, false, false, true, false, false, 0, 0, false);
+            
+            swModel.ForceRebuild3(true);
+
+            swModel.ShowNamedView2("*Trimetric", 8);
 
             swModel.ViewZoomtofit2();
 
-            swModel.ForceRebuild3(true);
-            
-            /* Coming Soon (Automated Appeareance Setter)
             //strName = @"C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\data\graphics\Materials\metal\aluminum\blue anodized aluminum.p2m";
 
-            swAppearance = swModelDocExt.CreateRenderMaterial("C:\\Program Files\\SOLIDWORKS Corp\\SOLIDWORKS\\data\\graphics\\Materials\\metal\\aluminum\\blue anodized aluminum.p2m");
+            /*swAppearance = swModelDocExt.CreateRenderMaterial("C:\\Program Files\\SOLIDWORKS Corp\\SOLIDWORKS\\data\\graphics\\Materials\\metal\\aluminum\\blue anodized aluminum.p2m");
 
             status = swAppearance.AddEntity(swModel);
 
@@ -102,8 +102,9 @@ namespace automationapp
             swModel.ForceRebuild3(true);
 
             swModel.SaveAs3(root.ToString() + "\\" + Partname + ".sldprt", (int)swSaveAsVersion_e.swSaveAsCurrentVersion, (int)swSaveAsOptions_e.swSaveAsOptions_CopyAndOpen);
-
             */
-        } // end CreatePart
-    } // end class LegoModel
-} // end namespace
+
+        }
+
+    }
+}

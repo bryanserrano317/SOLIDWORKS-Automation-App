@@ -36,13 +36,14 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("3ds", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(59, 320);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(446, 162);
             this.button1.TabIndex = 0;
             this.button1.Text = "Start Build!";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
@@ -68,18 +69,19 @@
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(446, 24);
             this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Select a face of a preexisting cube to add a block";
+            this.textBox2.Text = "Then select a face of a preexisting cube to add a block";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Font = new System.Drawing.Font("3ds", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(59, 120);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(446, 162);
             this.button2.TabIndex = 3;
             this.button2.Text = "Start Here :)";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // minecraftForm
@@ -93,7 +95,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Name = "minecraftForm";
-            this.Text = "Minecraft Game";
+            this.Text = "SOLIDWORKS Automation - SOLIDCRAFT";
             this.Load += new System.EventHandler(this.minecraftForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

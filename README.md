@@ -1,5 +1,5 @@
 # SOLIDWORKS-Automation
-Desktop App built with C#, Visual Studio, and the SOLIDWORKS API for SOLIDWORKS Automation
+Desktop App built with C#, Visual Studio, and the SOLIDWORKS API for SOLIDWORKS Automation.
 App intends to educate Mechanical Engineering Students and hobbyists on how to integrate modern programming in SOLIDWORKS to accelerate part design and have more fun with the software.
 
 Start Page

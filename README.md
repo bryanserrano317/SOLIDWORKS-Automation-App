@@ -11,3 +11,8 @@ Bolt (Hardware)
 
 
 ![image](https://user-images.githubusercontent.com/75232089/158625795-e89396c9-1548-4532-857f-d3af55c93859.png)
+
+
+Washer
+
+![Screenshot 2022-03-16 113124](https://user-images.githubusercontent.com/75232089/158627553-173b7a48-f65c-48f0-9db8-915053245bff.png)
